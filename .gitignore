@@ -1,0 +1,18 @@
+# Archivos de configuración de IntelliJ (MUY IMPORTANTE)
+.idea/
+*.iml
+out/
+gen/
+
+# Archivos compilados de Java
+*.class
+*.jar
+*.war
+
+# Carpetas de construcción
+build/
+target/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
