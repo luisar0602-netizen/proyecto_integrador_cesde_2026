@@ -2,12 +2,12 @@ package co.edu.cesde.ga.models;
 
 public class Persons {
 
-    Long userId;
-    String code;
-    String documentNumber;
-    String firstName;
-    String lastName;
-    Boolean status;
+    private Long userId;
+    private String code;
+    private String documentNumber;
+    private String firstName;
+    private String lastName;
+    private Boolean status;
 
     public Persons(Long userId, String code, String documentNumber, String firstName, String lastName, Boolean status) {
         this.userId = userId;
@@ -68,4 +68,17 @@ public class Persons {
     public void setStatus(Boolean status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "Persons {" +
+                "userID=" + userId +
+                ", code='" + code + '\'' +
+                ", documentNumber='" + documentNumber + '\''+
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", status=" + status +
+                '}';
+    }
 }
+
