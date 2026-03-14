@@ -1,15 +1,15 @@
 package co.edu.cesde.ga.models;
 
-public class Persons {
+public abstract class Persons {
 
-    private Long userId;
-    private String code;
-    private String documentNumber;
-    private String firstName;
-    private String lastName;
-    private Boolean status;
+    protected Long userId;
+    protected String code;
+    protected String documentNumber;
+    protected String firstName;
+    protected String lastName;
+    protected Boolean status;
 
-    public Persons(Long userId, String code, String documentNumber, String firstName, String lastName, Boolean status) {
+    public Persons (Long userId, String code, String documentNumber, String firstName, String lastName, Boolean status) {
         this.userId = userId;
         this.code = code;
         this.documentNumber = documentNumber;
@@ -18,7 +18,7 @@ public class Persons {
         this.status = status;
     }
 
-    public Persons() {
+    protected Persons() {
     }
 
     public Long getUserId() {
